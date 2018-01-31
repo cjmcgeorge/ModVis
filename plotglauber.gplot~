@@ -1,0 +1,10 @@
+set palette defined (-1 'blue, 1 'red')
+set cbrange[-1.:1.]
+set xrange[0:50]
+set yrange[0:50]
+
+p'Glauber.dat' u 1:2:3 w image
+while(1) {
+	 replot
+	 pause 0.3
+}
